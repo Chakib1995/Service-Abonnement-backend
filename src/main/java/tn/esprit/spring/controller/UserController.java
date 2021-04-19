@@ -60,7 +60,7 @@ public class UserController {
 	public List<String> getAllUserByNames(){
 		return iuserServiceImpl.getAllUserByNames();
 	}
-	@PostMapping("/getUserByName")
+	@GetMapping("/getUserByName")
     @ResponseBody
 	public List<User> getUserByName(@RequestBody String firstname) {
 		
